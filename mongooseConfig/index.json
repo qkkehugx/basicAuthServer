@@ -1,0 +1,5 @@
+{
+  "testing": "mongodb://localhost:27017/equilibrium-local-test",
+  "development": "mongodb://localhost:27017/equilibrium-local-dev",
+  "production": "to be filled in later bro"
+}
