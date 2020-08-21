@@ -66,7 +66,7 @@ const opts = {
   secretOrKey: secret,
 };
 
-passport.use('jwt', jwtStrategy(opts, (jwtPayload, done)=>{
+passport.use('jwt', new jwtStrategy(opts, (jwtPayload, done)=>{
   const {id} = jwtPayload;
   authSchema.findById(id)
       .then((user)=>{

@@ -1,7 +1,6 @@
 const fs = require('fs');
 
-const configPath = './index.json';
-
+const configPath = __dirname + '/index.json';
 module.exports = (env) =>{
   const validEnvironments = ['production', 'testing', 'development'];
   if (!env || typeof env !== 'string') throw new Error('Invalid arguments passed');

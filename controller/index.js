@@ -43,6 +43,7 @@ function login(req, res, next) {
   return handler(req, res, next);
 };
 function findUser(req, res, next) {
+  
 }
 
 module.exports = {
